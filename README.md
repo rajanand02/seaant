@@ -1,1 +1,1 @@
-I am just playing with Django by following the CRUD tutorial
+I am playing with django for seaant application
