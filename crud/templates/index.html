@@ -2,13 +2,14 @@
 
 {% block content %}
 	<table>
-		<tr><td>Name</td><td>Phone</td><td>Age</td></tr>
-		{% for user in all_users %}
-		<tr>
-			<td>{{ user.name }}</td>
-			<td>{{ user.phone }}</td>
-			<td>{{ user.age }}</td>
-		</tr>
-		{% endfor %}
+		<tr><td>User Name</td>
 	</table>
+		<select>
+		{% for user in all_users %}
+			<option>{{ user.name  }}</option>
+		{% endfor %}
+		</select>
+	<button type="button">Add User</button>
+	<button type="button">Edit User</button>
+	<button type="button">Delete User</button>
 {% endblock %}
