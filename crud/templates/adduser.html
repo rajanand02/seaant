@@ -1,31 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
-<form action="addinguser.php" id="adduser" method="post">
 
+<form class ="well" action = >
+	<lable>Username</lable>
+	<input type="text" class="span3" placeholder="Type your username here.."/><br/>
+	<label>Phone</label>
+	<input type="text" class="span3" placeholder="Type your contact number.."/><br/>
+	<label>Age</label>
+        <input type="text" class="span3" placeholder="Type your Age.."/><br/>	 
+	<button class="btn btn-primary">Add</button>
+	<button class="btn">Clear</button>
 
-<table border="0">
-
-<tbody>
-
-<tr>
-<td><label for="name">Name*: </label> </td>
-<td><input id="name" maxlength="45" name="name" type="text" /> </td>
-</tr>
-
-<tr>
-<td><label for="">Phone*:</label> </td>
-<td><input id="phone" maxlength="12" name="phone" type="telephone" /> </td>
-</tr>
-
-<tr>
-<td><label for="Age">Age*:</label></td>
-<td><input id="age" maxlength="3" name="age" type="text" /></td>
-</tr>
-
-<tr>
-<td align="right"><input name="Submit" type="submit" value="Submit" /></td>
-</tr>
-
-</tbody></table>
 </form>
 {% endblock %}

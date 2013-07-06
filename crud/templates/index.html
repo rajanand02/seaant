@@ -9,8 +9,10 @@
 			<option>{{ user.name  }}</option>
 		{% endfor %}
 		</select>
-	<button type="button">Add User</button>
-	<button type="button">Edit User</button>
-	<button type="button">Delete User</button>
-	<br><button type="button">Done</button></br>
+		<div class="btn-group" data-toggle="buttons-checkbox">
+ 		        <button type="button" class="btn btn-primary">Add User</button>
+ 		 	<button type="button" class="btn btn-primary">Edit User</button>
+  			<button type="button" class="btn btn-primary">Delete User</button>
+		</div>
+<br><button type="button" class="btn btn-primary" data-loading-text="Finalizing...">Done</button></br>
 {% endblock %}
